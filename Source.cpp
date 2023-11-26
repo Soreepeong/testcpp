@@ -85,7 +85,7 @@ int main() {
 	// Read shader
 	std::vector<uint8_t> csData;
 	{
-		// dxc -T cs_5_0 Z:\compute_shader_test.hlsl -E CSMain -Zi -Fd Z:\compute_shader_test.pdb -Fo Z:\compute_shader_test.fx
+		// dxc -T cs_6_0 Z:\compute_shader_test.hlsl -E CSMain -Zi -Fd Z:\compute_shader_test.pdb -Fo Z:\compute_shader_test.fx
 		std::ifstream csin(LR"(Z:\compute_shader_test.fx)", std::ios::binary);
 		csin.seekg(0, std::ios::end);
 		csData.resize(csin.tellg());
